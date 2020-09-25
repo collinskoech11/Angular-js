@@ -5,6 +5,13 @@
     width: 100%;
     position:relative;
 
+    &:hover {
+        .x-icon-button{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
     .x-icon-button{
         position: absolute;
         height:34px;
@@ -12,11 +19,21 @@
         border-radius: 50%;
         background:$dark;
         background-image: url("../../../assets/delete_icon.svg");
-        background-size:cover;
+        background-position:center;
         background-repeat: no-repeat;
         right: -17px;//this has to be half the width
         top: -17px;//this has to be half the height
+        transform: scale(0);
+        opacity: 0;
+        transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+
+        &:hover{
+            transform: scale(1.2);
+            cursor:pointer;
+        }
     }
+
+   
 }
 
 .budget-item{
@@ -26,6 +43,11 @@
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+
+    transition: background-color 0.2s ease-out;
+    &:hover{
+        background-color: darken($light-grey, 5%);
+    }
 
     .description{
         display:flex;
@@ -40,6 +62,8 @@
         padding: 5px;
         border-radius: 3px;
     }
+
+    
 }
 
 .expense{
