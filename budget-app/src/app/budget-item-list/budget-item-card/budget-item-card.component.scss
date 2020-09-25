@@ -3,6 +3,20 @@
 .root{
     display: flex;
     width: 100%;
+    position:relative;
+
+    .x-icon-button{
+        position: absolute;
+        height:34px;
+        width: 34px;
+        border-radius: 50%;
+        background:$dark;
+        background-image: url("../../../assets/delete_icon.svg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        right: -17px;//this has to be half the width
+        top: -17px;//this has to be half the height
+    }
 }
 
 .budget-item{
@@ -14,9 +28,13 @@
     cursor: pointer;
 
     .description{
+        display:flex;
         flex-grow: 1;
         font-size: 18px;
         margin-left: 5px;
+
+        //vertically align the children elements
+        align-items: center;
     }
     .amount{
         padding: 5px;
