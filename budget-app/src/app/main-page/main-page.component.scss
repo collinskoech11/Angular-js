@@ -38,7 +38,19 @@
             color:lighten($green,12%);
         }
         &.red{
-            color:$red;
+            color:lighten($red,12%);
         }
+    }
+}
+
+.add-item-section{
+    display:flex;
+
+    //horizontally and vertically center
+    justify-content: center;
+    align-items: center;
+
+    .add-item-container{
+        width:680px;
     }
 }
