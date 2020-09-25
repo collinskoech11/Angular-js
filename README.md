@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 Navigate to project folder
-Run 'cd budget-app' to navigate to the actual budget app
+Run `cd budget-app` to navigate to the actual budget app
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
