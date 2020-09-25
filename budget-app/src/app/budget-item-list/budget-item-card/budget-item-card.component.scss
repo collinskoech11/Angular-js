@@ -1,0 +1,14 @@
+@import '../../../main-styles.scss';
+
+.root{
+    display: flex;
+    width: 100%;
+}
+
+.budget-item{
+    display: flex;
+    width: 100%;
+    background-color: $light-grey;
+    padding: 10px;
+    border-radius: 5px;
+}
