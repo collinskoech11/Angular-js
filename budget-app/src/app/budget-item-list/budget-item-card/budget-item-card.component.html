@@ -1,14 +1,14 @@
 <div class="root">
-    <div class="budget-item"[ngClass]="{ 'income': isIncome, 'expense': !isIncome  }">
+    <div class="budget-item" [ngClass]="{ 'income': isIncome, 'expense': !isIncome }">
         <div class="description">
-            <p>test</p>
+            <p>{{ item.description }}</p>
         </div>
         <div class="amount">
-            <p>100</p>
+            <p>{{ item.amount }}</p>
         </div>
     </div>
 
     <div class="x-icon-button">
-        
+
     </div>
 </div>
